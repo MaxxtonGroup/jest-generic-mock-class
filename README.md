@@ -16,14 +16,14 @@ The `GenericMockClass` is designed to harness the capabilities of TypeScript gen
 
 Install `jest-generic-mock-class` using npm:
 
-```
+```bash
 npm install jest-generic-mock-class
 ```
 
 ## Usage
 
 ### Automatic spying on a method
-```
+```ts
 interface ServiceToMock {
   methodToBeSpied: () => void;
 }
@@ -36,7 +36,7 @@ expect( mock.getSpyFor( 'methodToBeSpied' ) ).toHaveBeenCalled();
 ```
 
 ### Automatic spying on a method with properties
-```
+```ts
 interface ServiceToMock {
   methodToBeSpied: ( foo: string, bar: string ) => void;
 }
@@ -50,7 +50,7 @@ expect( mock.getSpyFor( 'methodToBeSpied' ) ).not.toHaveBeenCalledWith( 'baz' );
 ```
 
 ### Returning a value from a method
-```
+```ts
 interface ServiceToMock {
   methodToBeSpied: () => number;
 }
@@ -62,7 +62,7 @@ expect( returnValue ).toBe( 123 );
 ```
 
 ### Changing the return value of a method later
-```
+```ts
 interface ServiceToMock {
   methodToBeSpied: () => number;
 }
