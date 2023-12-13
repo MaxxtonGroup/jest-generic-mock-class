@@ -3,7 +3,6 @@
 `GenericMockClass` is a TypeScript class that provides a convenient way to create mock objects with spies and overrides for testing purposes. 
 It is designed to be flexible and easy to use in various testing scenarios.
 
-
 The `GenericMockClass` is designed to harness the capabilities of TypeScript generics, enabling autocomplete suggestions for methods and properties on the mock that mirror those available on the actual object.
 
 ## Features
@@ -15,10 +14,10 @@ The `GenericMockClass` is designed to harness the capabilities of TypeScript gen
 
 ## Installation
 
-Install `GenericMockClass` using npm:
+Install `jest-generic-mock-class` using npm:
 
 ```
-npm install generic-mock-class
+npm install jest-generic-mock-class
 ```
 
 ## Usage
