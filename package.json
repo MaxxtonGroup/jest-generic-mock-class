@@ -1,10 +1,14 @@
 {
   "name": "jest-generic-mock-class",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "clean": "rimraf dist/",
+    "copy-files": "copyfiles package.json dist/",
+    "test": "jest",
+    "build": "npm run clean && tsc && npm run copy-files"
   },
   "repository": {
     "type": "git",
@@ -16,7 +20,9 @@
   "homepage": "https://github.com/MaxxtonGroup/jest-generic-mock-class#readme",
   "devDependencies": {
     "@types/jest": "^29.1.2",
+    "copyfiles": "^2.4.1",
     "jest": "^29.1.2",
+    "rimraf": "^5.0.5",
     "ts-jest": "^29.1.1",
     "typescript": "^5.3.3"
   }
